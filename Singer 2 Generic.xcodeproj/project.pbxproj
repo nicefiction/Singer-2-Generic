@@ -13,6 +13,9 @@
 		0913A19526B84BC90022AB57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0913A19426B84BC90022AB57 /* Preview Assets.xcassets */; };
 		0913A19726B84BC90022AB57 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913A19626B84BC90022AB57 /* Persistence.swift */; };
 		0913A19A26B84BC90022AB57 /* Singer_2_Generic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0913A19826B84BC90022AB57 /* Singer_2_Generic.xcdatamodeld */; };
+		0913A1A926B84D950022AB57 /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913A1A726B84D950022AB57 /* Singer+CoreDataClass.swift */; };
+		0913A1AA26B84D950022AB57 /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913A1A826B84D950022AB57 /* Singer+CoreDataProperties.swift */; };
+		0913A1AD26B856740022AB57 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913A1AC26B856740022AB57 /* FilteredList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		0913A19626B84BC90022AB57 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0913A19926B84BC90022AB57 /* Singer_2_Generic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Singer_2_Generic.xcdatamodel; sourceTree = "<group>"; };
 		0913A19B26B84BC90022AB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0913A1A726B84D950022AB57 /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0913A1A826B84D950022AB57 /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0913A1AC26B856740022AB57 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				0913A18D26B84BC50022AB57 /* Singer_2_GenericApp.swift */,
-				0913A18F26B84BC50022AB57 /* ContentView.swift */,
+				0913A1A226B84C450022AB57 /* View */,
 				0913A19126B84BC90022AB57 /* Assets.xcassets */,
-				0913A19626B84BC90022AB57 /* Persistence.swift */,
+				0913A1A426B84C4C0022AB57 /* Model */,
 				0913A19B26B84BC90022AB57 /* Info.plist */,
-				0913A19826B84BC90022AB57 /* Singer_2_Generic.xcdatamodeld */,
 				0913A19326B84BC90022AB57 /* Preview Content */,
 			);
 			path = "Singer 2 Generic";
@@ -73,6 +78,26 @@
 				0913A19426B84BC90022AB57 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0913A1A226B84C450022AB57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0913A18F26B84BC50022AB57 /* ContentView.swift */,
+				0913A1AC26B856740022AB57 /* FilteredList.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0913A1A426B84C4C0022AB57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0913A1A726B84D950022AB57 /* Singer+CoreDataClass.swift */,
+				0913A1A826B84D950022AB57 /* Singer+CoreDataProperties.swift */,
+				0913A19826B84BC90022AB57 /* Singer_2_Generic.xcdatamodeld */,
+				0913A19626B84BC90022AB57 /* Persistence.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0913A19726B84BC90022AB57 /* Persistence.swift in Sources */,
+				0913A1AA26B84D950022AB57 /* Singer+CoreDataProperties.swift in Sources */,
 				0913A19026B84BC50022AB57 /* ContentView.swift in Sources */,
+				0913A1A926B84D950022AB57 /* Singer+CoreDataClass.swift in Sources */,
 				0913A19A26B84BC90022AB57 /* Singer_2_Generic.xcdatamodeld in Sources */,
 				0913A18E26B84BC50022AB57 /* Singer_2_GenericApp.swift in Sources */,
+				0913A1AD26B856740022AB57 /* FilteredList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
