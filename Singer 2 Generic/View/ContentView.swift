@@ -17,7 +17,7 @@ struct ContentView: View {
    // MARK: - PROPERTY WRAPPERS
    
    @Environment(\.managedObjectContext) var moc
-   @State private var letterFilter: String = "A"
+   @State private var lastNameFilter: String = "A"
    
    
    
@@ -26,7 +26,12 @@ struct ContentView: View {
    var body: some View {
       
       VStack {
-         FilteredList(filter: letterFilter)
+         Text("Filtered by \(lastNameFilter)")
+            .fontWeight(.semibold)
+         FilteredList(filterKey: "lastName",
+                      filterValue: lastNameFilter) { (singer: Singer) in
+            Text("\(singer.wrappedLastName) \(singer.wrappedFirstName)")
+         }
          VStack(spacing: 20) {
             Button("Add Singers") {
                let taylor: Singer = Singer(context: moc)
@@ -46,10 +51,10 @@ struct ContentView: View {
                }
             }
             Button("Filter A") {
-               self.letterFilter = "A"
+               self.lastNameFilter = "A"
             }
             Button("Filter S") {
-               self.letterFilter = "S"
+               self.lastNameFilter = "S"
             }
          }
          .font(.title)
